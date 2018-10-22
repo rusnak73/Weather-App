@@ -1,7 +1,159 @@
+@import '_reset';
+
+a {
+  text-decoration: none;
+}
 
 body {
   font-family: 'Ubuntu', sans-serif;
+  color: #fff;
 }
-header {
-  background-color: #d0dcff;
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.home{
+  padding: 37px 0 0;
+  background-image: url('../images/home-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  header {
+    .navbar{
+      display: flex;
+      justify-content: space-between;
+      &_logo {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      &-menu {
+        display: flex;
+        &_item{ 
+          margin-right: 82px;
+          a{
+            display: block;
+            color: #e1e1e1;
+            font-size: 18px;
+            line-height: 21.6px;
+            &:hover{
+              color: #fff;
+            }
+          }
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+      }
+      &-social{
+        display: flex;
+        &_item{
+          margin-right: 43px;
+          a {
+            font-size: 24px;
+            vertical-align: middle;
+            color: #fff;
+            line-height: 25px;
+          }
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+        
+      }
+    }
+  }
+}
+
+
+.home{
+  &-main{
+    display: flex;
+  }
+  .main{
+    &-info {
+      max-width: 50%;
+      margin-top: 244px;
+      &_title{
+        font-size: 60px;
+        font-weight: 700;
+        &--mbottom{
+          margin-bottom: 42px;
+        }
+      }
+      &_text{
+        font-size: 18px;
+        line-height: 30px;
+      }
+      &-buttons{
+        display: flex;
+        margin-top: 59px;
+        &_button{
+          width: 158px;
+          height: 52px;
+          margin-right: 13px;
+          border-radius: 4px;
+          line-height: 52px;
+          text-align: center;
+          background-color: #fc6a42;
+          color: #fff;
+          &--features{
+            background-color: #4466c9;
+          }
+        }
+        
+      }
+    }
+    &-image{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      margin: 149px 0 36px;
+      &_attribute{
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        background-color: #fc6a42;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 90px;
+        text-transform: uppercase;
+        font-size: 18px;
+        &--orange{
+          left: 0;
+          bottom: 220px;
+        }
+        &--white{
+          top: 84px;
+          right: 10%;
+          width: 59px;
+          height: 58px;
+          background-color: #ffffff;
+          color: #6ca3ff;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 58px;
+        }
+        &--blue{
+          top: 267px;
+          right: 2%;
+          background-color: #4466c9;
+          font-size: 16px;
+          font-weight: 700;
+        }
+        &--yellow{
+          right: 10%;
+          bottom: -28px;
+          width: 56px;
+          height: 56px;
+          line-height: 56px;
+          background-color: #fcec64;
+          color: #648cff;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  
 }

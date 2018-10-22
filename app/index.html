@@ -13,22 +13,54 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <header>
-      <h2 class="nav_logo">Fun Weather.</h2>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>Features</li>
-        <li>Reviews</li>
-        <li>Download</li>
-      </ul>
-    </nav>
-    <ul class="solil_links">
-      <li><i class="fab fa-facebook-f"></i></li>
-      <li><i class="fab fa-instagram"></i></li>
-      <li><i class="fab fa-twitter"></i></li>
-    </ul>
-  </header>
+  <section class="home">
+    <div class="wrapper">
+      <header>
+        <nav class="navbar">
+          <h2 class="navbar_logo">Fun Weather.</h2>
+          <ul class="navbar-menu">
+            <li class="navbar-menu_item"><a href="#">Home</a></li>
+            <li class="navbar-menu_item"><a href="#">Features</a></li>
+            <li class="navbar-menu_item"><a href="#">Reviews</a></li>
+            <li class="navbar-menu_item"><a href="#">Download</a></li>
+          </ul>
+          <!-- /navbar-menu -->
+          <ul class="navbar-social">
+            <li class="navbar-social_item"> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="navbar-social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li class="navbar-social_item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+          <!-- /navbar-social -->
+        </nav>
+      </header>
+      
+      <!-- /header -->
+      <div class="home-main">
+        <div class="main-info">
+          <h1 class="main-info_title main-info_title--mbottom">Get the most fun weather app</h1>
+          <p class="main-info_text">Simple, nice and user-friendly application of the weather. Only useful information</p>
+          <div class="main-info-buttons">
+            <a href="#" class="main-info-buttons_button">Download</a>
+            <a href="#features" class="main-info-buttons_button main-info-buttons_button--features">Features</a>
+          </div>
+          <!-- .main-info-buttons -->
+        </div>
+        <!-- .main-info -->
+        <div class="main-image">
+            <div class="main-image_attribute main-image_attribute--orange">Sunny</div>
+            <div class="main-image_attribute main-image_attribute--white">9˚</div>
+            <div class="main-image_attribute main-image_attribute--blue">London</div>
+            <div class="main-image_attribute main-image_attribute--yellow">Rio</div>
+            <img src="images/main-phone.png" alt="Weather App screenshot">
+        </div>
+      </div>
+      <!-- .home-main -->
+    </div>
+    <!-- /wrapper -->
+  </section>
+  <!-- section.main -->
+  
+  
   <script src="js/main.js"></script>
 </body>
 </html>
