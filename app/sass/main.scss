@@ -13,11 +13,28 @@ body {
   max-width: 1170px;
   margin: 0 auto;
 }
+.section{
+  &-header{
+    text-align: center;
+    &__title{
+      color: #648cff;
+      font-size: 36px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &__slogan{
+      margin-top: 30px;
+      color: #999999;
+      font-size: 18px;
+    }
+  }
+}
 .home{
-  padding: 37px 0 0;
-  background-image: url('../images/home-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 37px 0 65px;
+  // background-image: url('../images/home-bg.png');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background-color: #648cff;
   header {
     .navbar{
       display: flex;
@@ -63,10 +80,6 @@ body {
       }
     }
   }
-}
-
-
-.home{
   &-main{
     display: flex;
   }
@@ -155,5 +168,53 @@ body {
       }
     }
   }
-  
+  .scroll-down-btn {
+    display: block;
+    margin: 0 auto;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    i{
+      line-height: 49px;
+      color: #ff4a4f;
+    }
+  }
+}
+
+.features {
+  padding: 132px 0 142px;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 129px;
+    &-item {
+      max-width: 355px;
+      display: flex;
+      &__image {
+        height: 62px;
+      }
+      &-desc {
+        margin-left: 21px;
+        &__title{
+          margin-bottom: 24px;
+          color: #353854;
+          font-family: Ubuntu;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 36px;
+        }
+        &__text {
+          color: #aeaeae;
+          font-size: 16px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+
+.widgets {
+  padding-top: 55px 0 0;
 }
