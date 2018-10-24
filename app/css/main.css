@@ -56,6 +56,9 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #fff; }
 
+img {
+  display: block; }
+
 .wrapper {
   max-width: 1170px;
   margin: 0 auto; }
@@ -251,4 +254,32 @@ body {
           line-height: 30px; }
 
 .widgets {
-  padding-top: 55px 0 0; }
+  padding: 55px 0 0; }
+  .widgets .swiper-container {
+    margin-top: 62px; }
+  .widgets .swiper-button-prev {
+    left: 110px; }
+  .widgets .swiper-button-next {
+    righ: 110px; }
+
+.screenshots {
+  margin-top: 145px; }
+  .screenshots-container-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .screenshots-container-item-info {
+      margin-left: 180px; }
+      .screenshots-container-item-info__icon {
+        height: 63px;
+        margin-top: 86px; }
+      .screenshots-container-item-info__title {
+        margin: 48px 0 36px; }
+      .screenshots-container-item-info__text {
+        max-width: 490px;
+        color: #353854;
+        font-size: 24px;
+        line-height: 36px; }
+      .screenshots-container-item-info__iconset {
+        margin-top: 42px; }

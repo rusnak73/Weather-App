@@ -1,15 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Weather App</title>
-  <!--Google Fonts-->
+  <!--google fonts-->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
-  <!-- Font Awesome -->
+  <!-- font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <!-- Main CSS -->
+  <!-- swiper slider css -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <!-- main css -->
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -17,7 +19,7 @@
     <div class="wrapper">
       <header>
         <nav class="navbar">
-          <h2 class="navbar_logo">Fun Weather.</h2>
+          <h2 class="navbar_logo">fun weather.</h2>
           <ul class="navbar-menu">
             <li class="navbar-menu_item"><a href="#">Home</a></li>
             <li class="navbar-menu_item"><a href="#">Features</a></li>
@@ -38,7 +40,7 @@
       <div class="home-main">
         <div class="main-info">
           <h1 class="main-info_title main-info_title--mbottom">Get the most fun weather app</h1>
-          <p class="main-info_text">Simple, nice and user-friendly application of the weather. Only useful information</p>
+          <p class="main-info_text">Simple, nice and user-friendly application of the weather. only useful information</p>
           <div class="main-info-buttons">
             <a href="#" class="main-info-buttons_button">Download</a>
             <a href="#features" class="main-info-buttons_button main-info-buttons_button--features">Features</a>
@@ -47,11 +49,11 @@
         </div>
         <!-- .main-info -->
         <div class="main-image">
-          <div class="main-image_attribute main-image_attribute--orange">Sunny</div>
+          <div class="main-image_attribute main-image_attribute--orange">sunny</div>
           <div class="main-image_attribute main-image_attribute--white">9˚</div>
-          <div class="main-image_attribute main-image_attribute--blue">London</div>
-          <div class="main-image_attribute main-image_attribute--yellow">Rio</div>
-          <img src="images/main-phone.png" alt="Weather App screenshot">
+          <div class="main-image_attribute main-image_attribute--blue">london</div>
+          <div class="main-image_attribute main-image_attribute--yellow">rio</div>
+          <img src="images/main-phone.png" alt="weather app screenshot">
         </div>
       </div>
       <!-- .home-main -->
@@ -64,37 +66,37 @@
   <section class="features">
     <div class="wrapper">
       <div class="section-header">
-        <h2 class="section-header__title">Perfect Features</h2>
+        <h2 class="section-header__title">perfect features</h2>
         <p class="section-header__slogan">Only necessary</p>
       </div>
       <!-- .section-header -->
       <div class="features-container">
         <div class="features-container-item">
-          <img class="features-container-item__image" src="images/features/usabiity.png" alt="Usabiity">
+          <img class="features-container-item__image" src="images/features/usabiity.png" alt="usabiity">
           <div class="features-container-item-desc">
             <h3 class="features-container-item-desc__title">Usability</h3>
             <p class="features-container-item-desc__text">
-              Sometimes the simplest things are the hardest to find. So we created a new line for everyday life
+              Sometimes the simplest things are the hardest to find. so we created a new line for everyday life
             </p>
           </div>
         </div>
         <!-- .container-item -->
         <div class="features-container-item">
-          <img class="features-container-item__image" src="images/features/parallax.png" alt="Parallax">
+          <img class="features-container-item__image" src="images/features/parallax.png" alt="parallax">
           <div class="features-container-item-desc">
             <h3 class="features-container-item-desc__title">Parallax Effect</h3>
             <p class="features-container-item-desc__text">
-              Sometimes the simplest things are the hardest to find. So we created a new line for everyday life
+              Sometimes the simplest things are the hardest to find. so we created a new line for everyday life
             </p>
           </div>
         </div>
         <!-- .container-item -->
         <div class="features-container-item">
-          <img class="features-container-item__image" src="images/features/style.png" alt="Unlimites Colors">
+          <img class="features-container-item__image" src="images/features/style.png" alt="unlimites colors">
           <div class="features-container-item-desc">
             <h3 class="features-container-item-desc__title">Unlimites Colors</h3>
             <p class="features-container-item-desc__text">
-              Sometimes the simplest things are the hardest to find. So we created a new line for everyday life
+              Sometimes the simplest things are the hardest to find. so we created a new line for everyday life
             </p>
           </div>
         </div>
@@ -107,13 +109,76 @@
   <!-- .features section -->
   <section class="widgets">
     <div class="wrapper">
-            <div class="section-header">
-              <h2 class="section-header__title">Simple widgets</h2>
-              <p class="section-header__slogan">Drag and Drop</p>
-            </div>
+      <div class="section-header">
+        <h2 class="section-header__title">Simple Widgets</h2>
+        <p class="section-header__slogan">Drag and Drop</p>
+      </div>
+      <!-- slider main container -->
+      <div class="swiper-container">
+        <!-- additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- slides -->
+          <div class="swiper-slide"><img src="images/slider/image_center.png" alt="slide 1"></div>
+          <div class="swiper-slide"><img src="images/slider/image_left.png" alt="slide 2"></div>
+          <div class="swiper-slide"><img src="images/slider/image_right.png" alt="slide 3"></div>
+          ...
+        </div>
+        <!-- if we need pagination -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- if we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
+        <!-- if we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
     <!-- .wrapper -->
   </section>
   <!-- section.widgets -->
+  <section class="screenshots">
+    <div class="wrapper">
+      <div class="section-header">
+        <h2 class="section-header__title">Screenshots</h2>
+        <p class="section-header__slogan">The brightest images</p>
+      </div>
+      <div class="screenshots-container">
+        <div class="screenshots-container-item">
+          <div class="screenshots-container-item-image">
+            <div class="screenshots-container-item-image-wtemp-icon">15˚</div>
+            <img src="images/screenshots/cloudy.png" alt="Cloudy screenshot">
+            <div class="screenshots-container-item-image-wstatus-icon">Cloudy</div>
+          </div>
+          <div class="screenshots-container-item-info">
+            <div class="screenshots-container-item-info__icon">
+              <img src="images/icons/icon_clouds.png" alt="Cloud icon">
+            </div>
+            <div class="screenshots-container-item-info__title">
+              <h2 class="section-header__title">When the clouds</h2>
+            </div>
+            <p class="screenshots-container-item-info__text">
+              Variable information on the air humidity, 
+              the feeling of the weather, and the ability 
+              to share this with your friends
+            </p>
+            <div class="screenshots-container-item-info__iconset">
+              <img src="images/icons/iconset.png" alt="Set of icons">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- .wrapper -->
+  </section>
+  
+  
+  
+  <!-- scripts -->
+  
+  <!-- swiper slider js -->
+  <script src="js/swiper.min.js"></script>
+  <!-- main scripts -->
   <script src="js/main.js"></script>
 </body>
 </html>

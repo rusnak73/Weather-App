@@ -7,6 +7,12 @@ a {
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #fff;
+  // background: linear-gradient(90deg, #ededf6, 1%, transparent 1%) 1px 0, #fff;
+  // background-size: 200px 1px;
+}
+
+img {
+  display: block;
 }
 
 .wrapper {
@@ -216,5 +222,50 @@ body {
 }
 
 .widgets {
-  padding-top: 55px 0 0;
+  padding: 55px 0 0;
+  .swiper{
+    &-container {
+      margin-top: 62px;
+      // padding: 0 42px;
+    }
+    &-button{
+      &-prev{
+        left: 110px;
+      }
+      &-next{
+        righ: 110px;
+      }
+    }
+  }
+}
+
+.screenshots {
+  margin-top: 145px;
+  &-container{
+    &-item {
+      display: flex;
+      &-image {
+
+      }
+      &-info {
+        margin-left: 180px;
+        &__icon {
+          height: 63px;
+          margin-top: 86px;
+        }
+        &__title{
+          margin: 48px 0 36px;
+        }
+        &__text {
+          max-width: 490px;
+          color: #353854;
+          font-size: 24px;
+          line-height: 36px;
+        }
+        &__iconset {
+          margin-top: 42px;
+        }
+      }
+    }
+  }
 }
